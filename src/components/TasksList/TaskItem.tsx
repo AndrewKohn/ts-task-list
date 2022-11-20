@@ -39,7 +39,11 @@ const TaskItem = ({ task, tasks, setTasks }: Props) => {
     <li key={task.id} className={classes[`task-item`]}>
       <form onSubmit={e => taskEditHandler(e, task.id)}>
         {isEdit ? (
-          <input value={editTask} onChange={e => setEditTask(e.target.value)} />
+          <input
+            autoFocus
+            value={editTask}
+            onChange={e => setEditTask(e.target.value)}
+          />
         ) : task.isComplete ? (
           <s>{task.task}</s>
         ) : (
