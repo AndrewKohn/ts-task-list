@@ -1,0 +1,72 @@
+.task-item {
+  display: flex;
+  width: 30%;
+  border-radius: 7px;
+  padding: 2rem;
+  margin-top: 1.8rem;
+  background-image: url('https://img.freepik.com/free-photo/crumpled-yellow-paper-background-close-cup_60487-2390.jpg?size=626&ext=jpg');
+  background-position-y: -3.2rem;
+}
+
+.task-item form {
+  flex: 1;
+}
+
+.task-item form p,
+.task-item form s,
+.task-item form input {
+  color: var(--primary-color);
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+
+.task-item form s {
+  color: rgba(34, 34, 34, 0.65);
+}
+
+.task-item input {
+  width: 90%;
+  border: none;
+}
+
+.task-item input:focus {
+  outline: none;
+}
+
+.buttons {
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.button {
+  position: relative;
+  border: none;
+  background: none;
+  cursor: pointer;
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+.icon {
+  position: absolute;
+  font-size: 2.4rem;
+  top: 0;
+  left: 0;
+}
+
+.button:hover .icon {
+  transform: scale(1.15);
+}
+
+.button:active .icon {
+  transform: scale(1);
+  color: #2e2e2e;
+}
+
+@media (max-width: 600px) {
+  .task-item {
+    width: 100%;
+  }
+}

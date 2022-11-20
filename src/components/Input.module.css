@@ -44,3 +44,9 @@
 .input--submit-btn:active {
   box-shadow: 0 0 3px 1px var(--tertiary-color);
 }
+
+@media (max-width: 600px) {
+  .input {
+    width: 95%;
+  }
+}
